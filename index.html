@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previsão do tempo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="big-box">
+      <input
+        type="text"
+        placeholder="Digite o nome da cidade"
+        class="input-city"
+      />
+      <button class="btn-search">
+        <img
+          src="https://www.svgrepo.com/show/488200/find.svg"
+          alt="busca-cidade"
+          class="img-search"
+          onclick="btnSearchClick()"
+        />
+      </button>
+      <div class="median-box">
+        <h2 class="text-city">Tempo em Palmas</h2>
+        <p class="temp">20°C</p>
+
+        <div class="small-box">
+          <img
+            src="https://openweathermap.org/img/wn/04n.png"
+            alt="icone-info-tempo"
+            class="img-weather"
+          />
+          <p class="text-weather">Nublado</p>
+        </div>
+        <p class="text-humidity">Umidade: 70°</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
